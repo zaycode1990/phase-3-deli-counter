@@ -6,13 +6,13 @@ katz_deli = []
 def take_a_number(katz_que, customer)
 
 katz_que.push(customer)
-puts "Welcome, #{customer}. you are number #{katz_que.index(customer) + 1} in line."
+puts "Welcome, #{customer}. You are number #{katz_que.index(customer) + 1} in line."
 end
 
 def line(katz_que)
 current_que = katz_que.map.with_index { |customer, index| "#{index + 1}. #{customer}"}
 if katz_que.length == 0 
-    puts "The line is currently empty" 
+    puts "The line is currently empty." 
 else 
     puts "The line is currently:" + " #{current_que.join(" ")}"
 end
